@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernplattform - Modulauswahl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .module-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .custom-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="custom-gradient text-white py-12 px-4 shadow-lg">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Willkommen auf deiner Lernplattform</h1>
+            <p class="text-blue-100 text-lg md:text-xl">Wähle dein aktuelles Modul aus, um mit dem Lernen zu beginnen.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            
+            <!-- Modul 1.8 -->
+            <div class="module-card bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col h-full shadow-sm">
+                <div class="h-48 bg-blue-50 flex items-center justify-center p-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                    </svg>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <span class="text-blue-600 font-bold text-sm tracking-wider uppercase mb-2">Modul 1.8</span>
+                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Datenverarbeitung</h2>
+                    <p class="text-slate-600 mb-8 flex-grow">Lerne die Grundlagen der strukturierten Datenerfassung, Speicherung und Analyse kennen. Von Tabellenkalkulation bis hin zu Datenbanken.</p>
+                    <a href="modul-1-8.html" class="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors">
+                        Modul öffnen
+                    </a>
+                </div>
+            </div>
+
+            <!-- Modul 1.9 -->
+            <div class="module-card bg-white rounded-2xl border border-slate-200 overflow-hidden flex flex-col h-full shadow-sm">
+                <div class="h-48 bg-indigo-50 flex items-center justify-center p-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <span class="text-indigo-600 font-bold text-sm tracking-wider uppercase mb-2">Modul 1.9</span>
+                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Digitale Medien</h2>
+                    <p class="text-slate-600 mb-8 flex-grow">Erforsche die Welt der Mediengestaltung, Kommunikation und Sicherheit im Netz. Erstelle eigene Inhalte und verstehe die Wirkung von Medien.</p>
+                    <a href="modul-1-9.html" class="block text-center bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-xl transition-colors">
+                        Modul öffnen
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-100 border-t border-slate-200 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2024 Schulinformationssystem. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+</html>
